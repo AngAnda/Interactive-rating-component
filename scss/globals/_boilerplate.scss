@@ -1,0 +1,140 @@
+
+@mixin circle{
+    width:50px;
+    height: 50px;
+    background-color: var(--Darker-Medium-Grey);
+    border-radius: 50%;
+}
+
+@mixin orange-layout{
+    background-color: darkorange;
+    color:var(--White);
+    opacity: 1;
+}
+
+@mixin white-layout{
+    background-color: var(--White);
+    color: #ff8c00;
+    opacity: 1;
+}
+
+.demo{
+   @include white-layout();
+}
+
+
+html{
+    box-sizing: border-box;
+    font-size: 100%;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+    color:var(--White);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main{
+    background-color: var(--Dark-Blue);
+    width:416px;
+    height:413px;
+    padding:2rem;
+    border-radius: 10%;
+}
+
+input[type="button"]{
+    @include orange-layout();
+    border:none;
+    width:100%;
+    padding: 15px 0;
+    position: relative;
+    top:-10px;
+    border-radius: 30px;
+    cursor: pointer;
+    text-transform: uppercase;
+    font:inherit;
+    letter-spacing: 2px;
+    &:hover{
+        background-color: var(--White);
+        color:darkorange;
+    }
+}
+
+
+input[type="radio"]{
+    /* S-ar putea sa nu fie ok */
+    display: none;
+    cursor: pointer;
+}
+
+ul{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+header img{
+    position: relative;
+    left:18px;
+    top:16px;
+}
+
+label{
+    cursor: pointer;  /* Ceva imi spune ca nu e prea ok */
+    @include circle();
+    opacity:60%;
+    position: relative;
+    left: 0px;
+    top:0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    &:hover{
+        @include orange-layout();
+    }
+}
+
+#image-star{
+    @include circle();
+}
+
+
+main *{
+    margin-bottom: 20px;
+}
+
+#main-1{
+    z-index:5;
+}
+
+#main_2{
+    text-align: center;
+    position:absolute;
+    z-index:10;
+    display: none;
+}
+
+figure img{
+    left:0px;
+    text-align: center;
+    margin-bottom: 2.5rem;
+}
+
+figcaption{
+    margin: 0 70px;
+    background-color: var(--Darker-Medium-Grey);
+    padding: 3px 0;
+    border-radius: 20px;
+    color:darkorange;
+}
+

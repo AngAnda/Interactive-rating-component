@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive rating component</title>
+  <link rel="stylesheet" href="/dist/styles.css">
+  <script src="js/script.js"></script>
+</head>
+<body>
+
+  <!-- Rating state start -->
+
+  <main id="main-1">
+    <header>
+      <div id="image-star">
+        <img src="images/icon-star.svg" alt="">
+      </div>
+    </header>
+    <h1>
+      How did we do?
+    </h1>
+    <p>
+      Please let us know how we did with your support request. All feedback is appreciated 
+      to help us improve our offering!
+    </p>
+    <form action="" id="myForm">
+      <ul>
+        <input type="radio" name="star" id="1" onclick="changed(this.id)" class="btn" required> <label for="1" id="l1">1</label>
+        <input type="radio" name="star" id="2" onclick="changed(this.id)" class="btn"> <label for="2" id="l2">2</label>
+        <input type="radio" name="star" id="3" onclick="changed(this.id)" class="btn"> <label for="3" id="l3">3</label>
+        <input type="radio" name="star" id="4" onclick="changed(this.id)" class="btn"> <label for="4" id="l4">4</label>
+        <input type="radio" name="star" id="5" onclick="changed(this.id)" class="btn"> <label for="5" id="l5">5</label>
+      </ul>
+      <input type="button" value="Submit" onclick="change_page()">
+    </form>
+  </main>
+  
+<main  id="main_2">
+    <header>
+        <figure>
+            <img src="/images/illustration-thank-you.svg" alt="">
+            <figcaption id="caption">You selected 4 out of 5</figcaption>
+        </figure>
+    </header>
+    <h1>
+        Thank you!
+    </h1>
+    <p>
+        We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!
+    </p>
+</main>
+
+</body>
+</html>

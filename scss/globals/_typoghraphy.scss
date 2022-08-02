@@ -1,0 +1,19 @@
+
+h1, h2, h3{
+    font-weight: 700;
+    line-height: 1.1;
+    margin-top: 0;
+}
+
+p{
+    margin-top:none;
+    color:var(--Light-Grey);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+input[type="submit"]{
+    font:inherit;
+    color:var(--White);
+    text-transform: uppercase;
+}
