@@ -43,7 +43,6 @@ btns.forEach(element => {
 
 submit.addEventListener("click", () =>{
     var check = document.querySelectorAll(".demo");
-    alert(check.length);
     if(check.length === 0){
       alert("A rating must be checked");
     }
