@@ -17,8 +17,8 @@
 
     // function change_page(){
     //   if(btn != 0){
-    //     var main = document.getElementById("main_2");
-    //     main.style.display="block";
+    //     var section = document.getElementById("section_2");
+    //     section.style.display="block";
     // }
     //   else
     //   alert("Please select a rating");
@@ -27,8 +27,8 @@
 
 const btns = document.querySelectorAll("label");
 const submit = document.querySelector("input[type='button']");
-const main_1 = document.getElementById("main-1");
-const main_2 = document.getElementById("main-2");
+const section_1 = document.getElementById("section-1");
+const section_2 = document.getElementById("section-2");
 
 btns.forEach(element => {
   element.addEventListener("click", function(e) {
@@ -48,9 +48,9 @@ submit.addEventListener("click", () =>{
       alert("A rating must be checked");
     }
     else{ 
-      main_1.classList.remove("show");
-      main_2.classList.add("show");
-      const rating = main_2.querySelector(".rating-value");
+      section_1.classList.remove("show");
+      section_2.classList.add("show");
+      const rating = section_2.querySelector(".rating-value");
       rating.innerHTML = check[0].textContent;
     }
     

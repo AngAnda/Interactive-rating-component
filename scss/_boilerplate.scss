@@ -45,7 +45,7 @@ body{
     align-items: center;
 }
 
-main{
+section{
     background-color: $Dark-Blue;
     width:416px;
     height:413px;
@@ -110,15 +110,15 @@ label{
 }
 
 
-main *{
+section *{
     margin-bottom: 20px;
 }
 
-#main-1{
+#section-1{
     z-index:5;
 }
 
-#main-2{
+#section-2{
     text-align: center;
     position:absolute;
     z-index:10;
@@ -138,6 +138,6 @@ figcaption{
     color:darkorange;
 }
 
-main:not(.show){
+section:not(.show){
     display: none;
 }
