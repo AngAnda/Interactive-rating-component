@@ -1,6 +1,9 @@
-@import './globals/boilerplate';
-@import './globals/colors';
-@import './globals/index';
-@import './globals/typoghraphy';
+@import 'boilerplate';
+@import 'colors';
+@import 'typoghraphy';
 
 
+.selected{
+    background-color: orange;
+    color: white;
+}

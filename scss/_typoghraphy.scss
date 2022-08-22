@@ -1,4 +1,5 @@
-@import "../globals/colors";
+@import "./colors";
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 h1, h2, h3{
     font-weight: 700;
@@ -11,7 +12,6 @@ p{
     color:var(--Light-Grey);
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
 
 input[type="submit"]{
     font:inherit;
